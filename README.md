@@ -14,7 +14,7 @@ CodeWeb es un editor de código para HTML, CSS y JavaScript. Está escrito en HT
 
 Para instalar CodeWeb, siga estos pasos:
 
-1. Clone el repositorio desde []
+1. Clone el repositorio desde **(https://github.com/thotluna/codeweb.git)**.
 2. Ejecute pnpm install para instalar las dependencias
 3. Ejecute pnpm run dev para correr en mode de desarrollo
 
