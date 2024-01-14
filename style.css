@@ -38,8 +38,9 @@ textarea{
   width: 100%;
   height: 99%;
   display: grid;
-  grid-template-rows: 1fr 1px 1fr;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-rows: 340px 5px 340px;
+  grid-template-columns: 737px 5px 737px;
+  overflow: hidden;
 }
 
 .gutter-col {
@@ -60,34 +61,50 @@ textarea{
   grid-row: 2;
 }
 
-.editor, iframe {
+iframe {
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 .3px rgba(255, 255, 255, .8);
 }
 
 .editor:focus{
   outline: 0;
 }
 
-#html {
+.editor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.editor::after{
+  content: '';
+  position: absolute;
+  right: .5rem;
+  bottom: .5rem;
+  z-index: 10;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+#html::after {
   background-image: url('/assets/logo-html.svg');
 }
 
-#js {
+#javascript::after {
   background-image: url('/assets/logo-js.svg');
 }
 
-#css {
+#css::after {
   background-image: url('/assets/logo-css.svg');
 }
 
-#html, #js, #css{
-  padding: .5rem;
-  background-repeat: no-repeat;
-  background-position: calc(100% - .5rem) calc(100% - .5rem);
-  background-size: 24px;
+.monaco-editor {
+  height: 100%;
+  padding: 0, 1rem;
 }
+
+
 
 
 
