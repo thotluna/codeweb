@@ -8,6 +8,9 @@ dependencies:
   js-base64:
     specifier: 3.7.5
     version: 3.7.5
+  monaco-editor:
+    specifier: 0.45.0
+    version: 0.45.0
   split-grid:
     specifier: 1.0.11
     version: 1.0.11
@@ -378,6 +381,10 @@ packages:
 
   /js-base64@3.7.5:
     resolution: {integrity: sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==}
+    dev: false
+
+  /monaco-editor@0.45.0:
+    resolution: {integrity: sha512-mjv1G1ZzfEE3k9HZN0dQ2olMdwIfaeAAjFiwNprLfYNRSz7ctv9XuCT7gPtBGrMUeV1/iZzYKj17Khu1hxoHOA==}
     dev: false
 
   /nanoid@3.3.7:
